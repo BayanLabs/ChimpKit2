@@ -140,9 +140,9 @@
 
 - (void)dismiss {
     if (self.navigationController) {
-        [self.navigationController dismissModalViewControllerAnimated:YES];
+        [self.navigationController dismissViewControllerAnimated:YES completion:NULL];
     } else {
-        [self dismissModalViewControllerAnimated:YES];
+        [self dismissViewControllerAnimated:YES completion:NULL];
     }
 }
 
